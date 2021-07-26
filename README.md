@@ -5,7 +5,7 @@ While I have experience writing code with Java and Python, I chose C# for this e
 1. Download and install .Net 5.0 SDK from [here](https://dotnet.microsoft.com/download/dotnet/5.0).
 2. Run the following command in the root folder:
 
-        dotnet run --project .\BWEmail.Api\BWEmail.Api.csproj
+        dotnet run --project ./BWEmail.Api/BWEmail.Api.csproj
 3. The service will be running on ports 5000 and 5001. You can call the service directly (e.g. with Postman) or use swagger: [https://localhost:5001/swagger](https://localhost:5001/swagger)
 4. If your browser does not trust the SSL certificate, run this command:
 
