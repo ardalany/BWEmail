@@ -25,9 +25,9 @@ namespace BWEmail.Api
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Set up the correct email client based on the email provider.
             if(Configuration["EmailProvider"] == "Spendgrid") {
                 services.AddHttpClient<IEmailClient, SpendgridClient>(client => {
                     client.BaseAddress = new Uri(Configuration["Spendgrid:BaseUrl"]);
